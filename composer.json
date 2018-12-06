@@ -1,0 +1,40 @@
+{
+  "name": "exileed/telegram-bot-api-laravel",
+  "description": "The Telegram Bot API PHP Laravel integration",
+  "keywords": ["telegram", "telegram bot", "telegram bot api", "telegram sdk", "telegram php", "laravel telegram", "laravel"],
+  "type": "library",
+  "homepage": "https://github.com/exileed/telegram-bot-api-laravel",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Dmitriy Kuts (ExileeD)",
+      "email": "me@exileed.com",
+      "homepage": "https://exileed.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "illuminate/container": "~5.0",
+    "exileed/telegram-bot-api": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Telegram\\Bot\\Laravel\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Telegram\\Bot\\Laravel\\TelegramServiceProvider"
+      ],
+      "aliases": {
+        "Telegram": "Telegram\\Bot\\Laravel\\Facades\\Telegram"
+      }
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
