@@ -15,7 +15,7 @@
   "require": {
     "php": "^7.1",
     "illuminate/container": "~5.0",
-    "exileed/telegram-bot-api": "~2.0"
+    "exileed/telegram-bot-api": "dev-develop"
   },
   "autoload": {
     "psr-4": {
